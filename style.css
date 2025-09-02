@@ -1,111 +1,15 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body { 
+  font-family: 'Poppins', sans-serif; 
 }
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f172a;
-  color: #f8fafc;
+.card:hover { 
+  transform: translateY(-5px); 
+  transition: all 0.3s; 
 }
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  background-color: #1e293b;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.btn-primary { 
+  background-color: #4CAF50; 
+  color: white; 
+  transition: all 0.3s; 
 }
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-.navbar li a {
-  color: #f8fafc;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.navbar li a:hover {
-  color: #38bdf8;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-  min-height: 80vh; /* Adjust as needed */
-  position: relative;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.headline {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #38bdf8;
-  margin-bottom: 10px;
-}
-
-.subtext {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.btn {
-  padding: 10px 20px;
-  background-color: #ffffffff;
-  color: #0f172a;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #ffffffff;
-}
-
-.center-badge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px auto;
-  width: 1750px; /* Change this value as needed */
-}
-
-.profile-img {
-  width: 150px;      /* Adjust size */
-  height: 150px;     /* Adjust size */
-  object-fit: cover; /* Crop to fit */
-  border-radius: 50%;/* Make it circular */
-  margin-bottom: 20px;
-}
-.banner-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 0;
-  display: block;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+.btn-primary:hover { 
+  background-color: #45a049; 
 }

@@ -12,12 +12,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .card:hover { transform: translateY(-5px); transition: all 0.3s; }
-    .btn-primary { background-color: #4CAF50; color: white; transition: all 0.3s; }
-    .btn-primary:hover { background-color: #45a049; }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50">
 
@@ -34,7 +30,7 @@
   <section id="products" class="py-20 px-6">
     <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our Products</h2>
     <div class="flex flex-wrap justify-center gap-8">
-      
+
       <!-- Product 1 -->
       <div class="card bg-white p-6 rounded-xl shadow-lg w-80 text-center" data-aos="fade-up">
         <h3 class="text-xl font-semibold mb-3">60-Day DSA Sprint</h3>
@@ -84,14 +80,6 @@
     </div>
   </section>
 
-  <!-- ===== About / Trust Section ===== -->
-  <section class="py-20 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Why Trust Us?</h2>
-    <p class="text-gray-600 max-w-xl mx-auto mb-4" data-aos="fade-up" data-aos-delay="100">
-      All products come with a 7-day refund guarantee. Instant access via secure Google Drive links. Trusted by students across India.
-    </p>
-  </section>
-
   <!-- ===== Contact Section ===== -->
   <section class="py-20 px-6 bg-gray-100 text-center">
     <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Contact</h2>
@@ -105,28 +93,14 @@
       <h3 id="popupTitle" class="text-xl font-semibold mb-3">Complete Your Purchase</h3>
       <p class="mb-3">Scan the QR or pay via UPI:</p>
       <img src="pay.jpg" alt="UPI QR" class="w-40 mx-auto mb-3">
-      <p class="mb-3"><strong>UPI ID:</strong> akash@upi</p>
+      <p class="mb-3"><strong>UPI ID:</strong> 8766885083@ybl</p>
       <p class="text-sm text-gray-500">After payment, send screenshot + email to <strong>learnaids2025@gmail.com</strong> for instant access.</p>
     </div>
   </div>
 
-  <!-- ===== Scripts ===== -->
+  <!-- Link to JS -->
+  <script src="script.js"></script>
   <script>
-    // Scroll to products
-    function scrollToProducts() {
-      document.getElementById('products').scrollIntoView({behavior: 'smooth'});
-    }
-
-    // Payment modal
-    function showPayment(product) {
-      document.getElementById("paymentPopup").style.display = "flex";
-      document.getElementById("popupTitle").innerText = "Buy " + product;
-    }
-    function closePayment() {
-      document.getElementById("paymentPopup").style.display = "none";
-    }
-
-    // Initialize AOS animations
     AOS.init({ duration: 1000, once: true });
   </script>
 
